@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+0<!DOCTYPE html>
 <html>
    <head>
        <title>Portfolio</title>
@@ -15,21 +15,46 @@
                <!-- Bootstrap JavaScript -->
                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-       <link rel="stylesheet" type="text/css" href="../style.css">
+               <style>
+               body {
+                 background:  ;
+                 padding-top: 5em;
+                 display: flex;
+                 justify-content: center;
+               }
+
+
+               .typewriter h1 {
+                 color: black;
+                 font-family: monospace;
+                 overflow: hidden; /* shows during animation */
+                 border-right: .15em solid DodgerBlue ; /* typwriter cursor */
+                 white-space: nowrap; /* content on a single line */
+                 margin: 0 auto;
+                 letter-spacing: .12em;
+                 animation:
+                   typing 3.5s steps(30, end),
+                   blink-caret .2s step-end infinite;
+               }
+                /*typing effect*/
+                @keyframes typing {
+                  from { width: 0 }
+                  to { width: 100% }
+                }
+                /*cursor effect */
+                @keyframe blink-caret {
+                  from, to { border-color: transparent }
+                  50% { border-color: orange;}
+                }
+
+               </style>
    </head>
 
-   <body background="img/.jpg">
-     <div class="container">
-
-      <!--jumbotron-->
-          <div class="jumbotron" style="background-image: url(https://ak6.picdn.net/shutterstock/videos/1014464006/thumb/10.jpg); background-size: 100%;">
-            <h1 alignment="left">Yahayra's Portfolio</h1>
-
-
-          </div>
+  <body>
+          <div class="container">
 
           <!-- Navbar -->
-                <nav class="navbar navbar-inverse">
+                <nav class="navbar navbar-inverse ">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="#">Yahayra's Portfolio</a>
                     </div>
@@ -40,27 +65,73 @@
                         <li><a href="pastworks.html">Past works</a></li>
                     </ul>
                 </nav>
+                <br>
+                <br>
+                <br>
+        <!--animation-->
+          <div class="typewriter">
+            <h1>Welcome to my website! </h1>
+          </div>
 
+          <br>
+          <br>
+
+          <div class="row">
+
+            <div class="col-md-8">
+              <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+            </div>
+
+            <div class="col-md-4">
+              <ul style="list-style:none;">
+                <li>
+                  <h3>Name:</h3> Yahayra Gutierrez
+                </li>
+                <li>
+                  <h3>Education:</h3> 2 years web design program, 4 years TSA
+                </li>
+                <li>
+                  <h3>Skills:</h3> Html, css, and a bit of JavaScript
+                </li>
+                <li>
+                  <h3>Email:</h3> YahayraGutierrez18@gmail.com
+                </li>
+                <li>
+                  <h3>Phone:</h3> 732-877-8695
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <br>
+
+          <h1 class="my-4"> Past Works</h1>
         <!--card-->
-              <div class="card" style="width: 45rem;">
-                  <img class="blur"src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="card-img-top" alt="codehs logo" style="width:50px height:50px">
-                  <div class="card-body">
-                    <h5 class="card-title">Why I started</h5>
-                    <p class="card-text">
-                      During my freshmen year teachers were talking about this new web coding class that had recently
-                      started. Curious I went to the presentation and I was really amazed by the fact that I can learn
-                      to code my own website.
-                    </p>
-                    <a href="#" class="btn btn-primary">Unsure Yet</a>
-                  </div>
-              </div>
+        <div class="col-sm-3">
+          <p>My first ever web page that i designed was an "About me". As seen in the image I didn't know how to get my text to be grouped together or proper formatting.</p>
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
 
+        <div class="col-sm-3">
+          <p>My Second webpage was a "Tell A story" which was about my favorite author. The main focus in this webpage was to resemble what I was writing about.
+            Tell A Story shoes how my css improved. </p>
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
 
+        <div class="col-sm-3">
+          <p>Third page was my first attempt at using Bootstrap. The pros of this website the bootstrap worked. The cons it was harder for me to also adapt my own
+            css and getting it to function.</p>
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+
+        <div class="col-sm-3">
+          <p>Fourth webpage was one of the best ones I've coded.Pros it looked professional, the bootstrap alongwith the css worked perfectly.ons it was hard getting
+             the iframes to work smoothly.  </p>
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
 
 
      </div> <!--container-->
 
 
-
-
-   </body>
+  </body>

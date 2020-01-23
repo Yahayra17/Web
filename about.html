@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>Portfolio</title>
+
+       <meta charset="utf-8">
+               <meta http-equiv="X-UA-Compatible" content="IE=edge">
+               <meta name="viewport" content="width=device-width, initial-scale=1">
+
+               <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+               <!-- Bootstrap CSS -->
+               <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+               <!-- Bootstrap JavaScript -->
+               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+               <link rel="stylesheet" href="styles.css">
+
+               <style>
+               .typewriter h1 {
+                 color: black;
+                 font-family: monospace;
+                 overflow: hidden; /* shows during animation */
+                 border-right: .15em solid DodgerBlue ; /* typwriter cursor */
+                 white-space: nowrap; /* content on a single line */
+                 margin: 0 auto;
+                 letter-spacing: .12em;
+                 animation:
+                   typing 3.5s steps(30, end),
+                   blink-caret .2s step-end infinite;
+               }
+                /*typing effect*/
+                @keyframes typing {
+                  from { width: 0 }
+                  to { width: 100% }
+                }
+                /*cursor effect */
+                @keyframe blink-caret {
+                  from, to { border-color: transparent }
+                  50% { border-color: orange;}
+                }
+
+               </style>
+    </head>
+
+    <body>
+      <div class="container">
+
+      <!-- Navbar -->
+            <nav class="navbar navbar-inverse ">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Yahayra's Portfolio</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="unit2.html">Unit 2</a></li>
+                    <li><a href="pastworks.html">Past works</a></li>
+                </ul>
+            </nav>
+
+            <div class="row">
+
+              <div class="col-md-8">
+                <img class="img-fluid" src="JACK.JPG" width="750" >
+              </div>
+              <div class="col-md-4">
+              <ul style="list-style:none;">
+                <li>
+
+                    <h3>
+                      I am very much a person who values family. They are what motivate me to
+                      become a better web designer. My two sisters Jackeline and Itzel
+                      are my favorite critics. Whenever I have no idea what to put on my website
+                      they offer suggestions of what they find interesting or what they like about
+                      different types of websites.
+                    </h3>
+
+                </li>
+              </div> <!--end of col-md-4>
+    </div> <!--end of container-->
+
+    </body>

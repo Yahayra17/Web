@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Web </title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+            <style>
+    .button{
+      background-color: crimson;
+      color:white;
+    }
+    .button1{border-radius: 8px;}
+
+    .panel{
+      border: 5px solid black;
+      width:30%;
+    }
+    .panel-heading{
+      background-color: #33001a;
+      color:white;
+    }
+    .panel-body{
+      text-align: center;
+    }
+    </style>
+
+    </head>
+    <body>
+      <div class="container">
+            <!-- Jumbotron -->
+            <div class="jumbotron">
+                <h1 align="center"> Unit 2 </h1>
+            </div>
+          <button onclick="document.getElementById('myImage').src='img/empty-glass-non-transparent-Download-Royalty-free-Vector-File-EPS-65725.jpg'">empty glass</button>
+
+          <img id="myImage" src="img/empty-glass-non-transparent-Download-Royalty-free-Vector-File-EPS-65725.jpg" style="width:100px">
+
+          <button onclick="document.getElementById('myImage').src='img/glass_cup_and_water_vector_587234.jpg'">full glass</button>
+
+          <a class="link" href="index.html"><p style="text-align:center">Home</a>
+
+
+
+        <!--calculator-->
+        <div class="panel ">
+        <div class="panel-heading">
+          <h3>Tip Calculator</h3>
+        </div>
+        <div class="panel-body">
+          <h5>How much was your bill?</h5>
+          <span class="glyphicon glyphicon-usd"></span>
+          <input type="text" name="Bill Amount" placeholder="Bill Amount">
+
+          <h5> How was your service?</h5>
+          <div class="dropup">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"> --Choose an option--
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Adequate</a></li>
+              <li><a href="#">Really good</a></li>
+              <li><a href="#">Normal</a></li>
+              <li><a href="#">Bad</a></li>
+            </ul>
+        </div> <!--dropup-->
+
+        <h5>How many people are sharing the bill? </h5>
+          <input type="text" name="Number of People" placeholder="Number of People">
+
+        <br>
+        <br>
+        <button class="button button1" type="button" onclick="alert('CALCULATE!')">CALCULATE!</button>
+      </p>
+      </div> <!--div panel-->
+
+      </div> <!--container-->
+      </body>
